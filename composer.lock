@@ -4,8 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "770ebc4ae083efe9f9b8644554e6ca1e",
+    "content-hash": "6c1acb09b44a26df7d76606404ae9bc7",
     "packages": [
+        {
+            "name": "amphp/amp",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/amp.git",
+                "reference": "f824f0df1da2cc042934fa267d7a227fff9276c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/amp/zipball/f824f0df1da2cc042934fa267d7a227fff9276c9",
+                "reference": "f824f0df1da2cc042934fa267d7a227fff9276c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7"
+            },
+            "require-dev": {
+                "amphp/php-cs-fixer-config": "dev-master",
+                "amphp/phpunit-util": "^1",
+                "ext-json": "*",
+                "phpstan/phpstan": "^0.8.5",
+                "phpunit/phpunit": "^6.0.9",
+                "react/promise": "^2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amp\\": "lib"
+                },
+                "files": [
+                    "lib/functions.php",
+                    "lib/Internal/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Weinand",
+                    "email": "bobwei9@hotmail.com"
+                },
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                },
+                {
+                    "name": "Daniel Lowrey",
+                    "email": "rdlowrey@php.net"
+                },
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@trowski.com"
+                }
+            ],
+            "description": "A non-blocking concurrency framework for PHP applications.",
+            "homepage": "http://amphp.org/amp",
+            "keywords": [
+                "async",
+                "asynchronous",
+                "awaitable",
+                "concurrency",
+                "event",
+                "event-loop",
+                "future",
+                "non-blocking",
+                "promise"
+            ],
+            "time": "2019-05-31T18:42:02+00:00"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v3.2.4",
@@ -674,72 +751,6 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
-        },
-        {
-            "name": "icicleio/icicle",
-            "version": "v0.9.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/icicleio/icicle.git",
-                "reference": "84a3cc6f7dc38500f4ed9bdae79f458d191cb119"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/icicleio/icicle/zipball/84a3cc6f7dc38500f4ed9bdae79f458d191cb119",
-                "reference": "84a3cc6f7dc38500f4ed9bdae79f458d191cb119",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5|^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.6"
-            },
-            "suggest": {
-                "ext-ev": "Provides an event loop with better performance.",
-                "ext-pcntl": "Enables custom signal handling."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Icicle\\": "src"
-                },
-                "files": [
-                    "src/functions.php",
-                    "src/Awaitable/functions.php",
-                    "src/Coroutine/functions.php",
-                    "src/Loop/functions.php",
-                    "src/Observable/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Piotrowski",
-                    "email": "aaron@icicle.io"
-                }
-            ],
-            "description": "Icicle is a PHP library for writing asynchronous code using synchronous coding techniques.",
-            "homepage": "http://icicle.io",
-            "keywords": [
-                "Socket",
-                "async",
-                "asynchronous",
-                "awaitable",
-                "coroutine",
-                "event",
-                "generator",
-                "interruptible",
-                "multitasking",
-                "network",
-                "promise",
-                "server",
-                "stream"
-            ],
-            "time": "2016-03-31T16:34:26+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
