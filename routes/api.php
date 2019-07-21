@@ -13,5 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('contents', 'Api\ContentsController@list');
+Route::get('contents/feed', 'Api\ContentsController@feed');
+Route::get('contents/amp', 'Api\ContentsController@amp');
 
